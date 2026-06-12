@@ -1,0 +1,32 @@
+Number Guessing Game 
+
+VARIABLES:
+
+Int randomNumber
+Int userGuess
+Int guessCount
+
+
+- Use the built-in random number generator function (math.rand()) to choose a number from 1 to 100, store this under variable ‘randomNumber’.
+- Prompt the user to guess a number between 1 and 100. Store their input under variable ‘userGuess’.
+- Create a variable ‘guessCount’ to store the amount of attempts the user has made in a single game. Initialize to zero.
+
+GAME LOOP:
+
+	WHILE guessCount <= 7 && userGuess != randomNumber
+		Prompt user to guess a number
+
+		IF 
+			The userGuess == randomNumber
+		THEN
+			User wins - print “You have won!”
+			Restart game, reset guessCount, generate another randomNumber
+		ELSE 
+			Print incorrect guess message - “Wrong number!”
+			Increase guessCount by one
+
+ 		IF 
+			guessCount > 7
+		THEN
+			User loses - print “You have lost!”
+			Restart game
